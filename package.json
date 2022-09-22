@@ -1,0 +1,30 @@
+{
+  "name": "a02",
+  "version": "1.0.0",
+  "description": "a02 for comp 426 yulupan",
+  "main": "index.js",
+  "scripts": {
+    "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a02-yulupan00.git"
+  },
+  "author": "yulupan00",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a02-yulupan00/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a02-yulupan00#readme",
+  "type": "module",
+  "bin": {
+    "galosh.js": "./cli.js"
+  },
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "minimist": "^1.2.6",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.37",
+    "node-fetch": "^3.2.10"
+  }
+}
