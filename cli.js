@@ -21,8 +21,8 @@ if(args.h){
 
 
 const timezone = args.z ? args.z : moment.tz.guess()
-var lat = args.n ? args.n : args.s;
-var long = args.e ? args.e : args.w;
+var lat = args.n ? args.n : args.s -1;
+var long = args.e ? args.e : args.w -1;
 var day = args.d ? args.d : 1;
 var start = moment().format("YYYY-MM-DD"); 
 var end = moment().add(day,'days').format("YYYY-MM-DD");
