@@ -26,7 +26,7 @@ var long = args.e ? args.e : args.w;
 var day = args.d ? args.d : 1;
 var start = moment().format("YYYY-MM-DD"); 
 var end = moment().add(day,'days').format("YYYY-MM-DD");
-var url = "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+long+"&daily=precipitation_hours&temperature_unit=fahrenheit&timezone="+timezone+"&start_date="+start+"&end_date="+end+",precipitation_hours";
+var url = "https://api.open-meteo.com/v1/forecast?latitude="+lat+"&longitude="+long+"&daily=precipitation_hours&temperature_unit=fahrenheit&timezone="+timezone+"&start_date="+start+"&end_date="+end;
 const response = await fetch(url);
 const data = await response.json();
 const days = args.d; 
