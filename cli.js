@@ -31,6 +31,11 @@ const response = await fetch(url);
 const data = await response.json();
 const days = args.d; 
 
+if(args.j) {
+  console.log(data);
+  process.exit();
+}
+
 if (data.daily.precipitation_hours[days] != 0) {
     console.log("You might need your galoshes");
   } else {
@@ -45,8 +50,4 @@ if (days == 0) {
     console.log("tomorrow.");
 }
 
-if(args.j) {
-    console.log(data);
-    process.exit();
-}
 console.log(data);
